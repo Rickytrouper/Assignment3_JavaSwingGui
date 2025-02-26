@@ -36,7 +36,7 @@ public class CurrencyConverter {
         JlInputValue = new JLabel("Input Amount $:");
 
         // Set up layout
-        mainPanel.setLayout(new FlowLayout());
+       // mainPanel.setLayout(new BoxLayout(mainPanel, BoxLayout.Y_AXIS));
         mainPanel.add(JlInputValue);
         mainPanel.add(txtInputValue);
         mainPanel.add(JlCurrencyType);
