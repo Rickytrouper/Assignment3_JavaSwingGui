@@ -1,5 +1,4 @@
 import javax.swing.*;
-import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -14,11 +13,11 @@ public class CurrencyConverter {
     private JLabel JlCurrencyType; // Label for currency type
     private JLabel JlInputValue; // Label for input value
 
+    // initializing  teh frame size
     public CurrencyConverter() {
-        // Create teh frame size
         JFrame frame = new JFrame("Currency Converter");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(400, 250);
+        frame.setSize(300, 250);
 
         // Initialize components
         mainPanel = new JPanel();
@@ -36,7 +35,6 @@ public class CurrencyConverter {
         JlInputValue = new JLabel("Input Amount $:");
 
         // Set up layout
-       // mainPanel.setLayout(new BoxLayout(mainPanel, BoxLayout.Y_AXIS));
         mainPanel.add(JlInputValue);
         mainPanel.add(txtInputValue);
         mainPanel.add(JlCurrencyType);
@@ -63,12 +61,12 @@ public class CurrencyConverter {
 
         // Add the main panel to the frame
         frame.add(mainPanel);
-        frame.setVisible(true);
+        frame.setVisible(true);// set to true for frame visibility
     }
 
     private void convertCurrency() {
         try {
-            double amount = Double.parseDouble(txtInputValue.getText()); // converting the string input to double
+            double amount = Double.parseDouble(txtInputValue.getText()); // converting the string input to a double
             double convertedAmount = 0.0;
             String selectedCurrency = (String) cbCurrencyType.getSelectedItem();
 
@@ -84,7 +82,7 @@ public class CurrencyConverter {
                     break;
             }
 
-            JmdAmount.setText(String.format("%.2f JMD", convertedAmount));
+            JmdAmount.setText(String.format("%.2f JMD", convertedAmount)); // format the output to 2 decimal place
         } catch (NumberFormatException ex) {
             JOptionPane.showMessageDialog(mainPanel, "Please enter a valid number.");
         }
