@@ -77,13 +77,13 @@ public class CurrencyConverter {
 
             switch (selectedCurrency) {
                 case "US Dollar":
-                    convertedAmount = amount * 157.57; // USD conversion rate
+                    convertedAmount = amount * 129.02; // USD conversion rate
                     break;
                 case "Canadian Dollar":
-                    convertedAmount = amount * 110.14; //  Canadian conversion rate
+                    convertedAmount = amount * 97.50; //  Canadian conversion rate
                     break;
                 case "Euro":
-                    convertedAmount = amount * 165.41; // Euro conversion rate
+                    convertedAmount = amount * 164.33; // Euro conversion rate
                     break;
             }
 

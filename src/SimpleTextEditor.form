@@ -7,12 +7,12 @@
     <properties/>
     <border type="none"/>
     <children>
-      <component id="b27a2" class="javax.swing.JTextArea" binding="txtArea">
-        <constraints border-constraint="Center"/>
-        <properties/>
-      </component>
       <component id="822d7" class="javax.swing.JMenuBar" binding="menuBar">
         <constraints border-constraint="South"/>
+        <properties/>
+      </component>
+      <component id="b27a2" class="javax.swing.JTextArea" binding="txtArea">
+        <constraints border-constraint="West"/>
         <properties/>
       </component>
     </children>
