@@ -1,3 +1,8 @@
+//      Abbligale Ried - ID#2301010638
+//      Kwame Harriott - ID#2301011566
+//      Shemoy Shay -  ID#2201011505
+//      Ricardo Wright - ID#2201010833
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -11,7 +16,7 @@ public class CurrencyConverter {
     private JButton btnClear; // Button to clear fields
     private JLabel jmdAmount; // Label for JMD amount
     private JLabel JlCurrencyType; // Label for currency type
-    private JLabel JlInputValue; // Label for input value
+    private JLabel JlInputValue; // Label for input value\8
 
     // initializing  teh frame size
     public CurrencyConverter() {
@@ -25,7 +30,7 @@ public class CurrencyConverter {
         String[] currencies = {"US Dollar", "Canadian Dollar", "Euro"};
         cbCurrencyType = new JComboBox<>(currencies);
         JmdAmount = new JTextField(10);
-        JmdAmount.setEditable(false); // setting to false preventing teh Output field from been edited
+        JmdAmount.setEditable(false); // set to false to prevent teh Output field from been edited
         btnConvert = new JButton("Convert");
         btnClear = new JButton("Clear");
 

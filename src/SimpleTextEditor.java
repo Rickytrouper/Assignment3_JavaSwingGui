@@ -1,3 +1,8 @@
+//      Abbligale Ried - ID#2301010638
+//      Kwame Harriott - ID#2301011566
+//      Shemoy Shay -  ID#2201011505
+//      Ricardo Wright - ID#2201010833
+
 import javax.swing.*;
 import java.awt.*;
 import java.io.*;
@@ -7,7 +12,7 @@ public class SimpleTextEditor {
     private JTextArea txtArea; // Text area for editing
     private JMenuBar menuBar; // Menu bar used for dropdowns
 
-    // Create and set up the frame
+    // Create and set up frame
     public SimpleTextEditor() {
 
         JFrame frame = new JFrame("Simple Text Editor");
@@ -33,13 +38,11 @@ public class SimpleTextEditor {
         // Add action listeners to menu items
         openItem.addActionListener(e -> openFile());
         saveItem.addActionListener(e -> saveFile());
-       // clearItem.addActionListener(e -> txtArea.setText(""));
-        exitItem.addActionListener(e -> System.exit(0));
+       exitItem.addActionListener(e -> System.exit(0));
 
         // Add items to the file menu
         fileMenu.add(openItem);
         fileMenu.add(saveItem);
-       // fileMenu.add(clearItem);
         fileMenu.addSeparator();
         fileMenu.add(exitItem);
 
