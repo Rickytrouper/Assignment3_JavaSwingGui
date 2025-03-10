@@ -26,13 +26,12 @@ public class SimpleTextEditor {
         // Create the menu bar
         menuBar = new JMenuBar();
 
-        // Create teh file menus
+        // Create the file menus
         JMenu fileMenu = new JMenu("File");
 
         // Create menu items
         JMenuItem openItem = new JMenuItem("Open");
         JMenuItem saveItem = new JMenuItem("Save");
-        //JMenuItem clearItem = new JMenuItem("Clear");
         JMenuItem exitItem = new JMenuItem("Exit");
 
         // Add action listeners to menu items

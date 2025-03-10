@@ -30,7 +30,7 @@ public class CurrencyConverter {
         String[] currencies = {"US Dollar", "Canadian Dollar", "Euro"};
         cbCurrencyType = new JComboBox<>(currencies);
         JmdAmount = new JTextField(10);
-        JmdAmount.setEditable(false); // set to false to prevent teh Output field from been edited
+        JmdAmount.setEditable(false); // set too false to prevent the Output field from been edited
         btnConvert = new JButton("Convert");
         btnClear = new JButton("Clear");
 
